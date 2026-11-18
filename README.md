@@ -21,12 +21,15 @@ Brand Tone: Hopeful, trustworthy, and action oriented.
 index.html
 
 ##### Mission statement
-Impact statistics, using text only
-“How You Can Help” section
-Services: services.html
-Adoption process overview
-Foster program overview
-Volunteer role descriptions
+[ ] Impact statistics, using text only
+[ ] “How You Can Help” section
+
+#### Services
+ services.html
+
+[ ] Adoption process overview
+[ ] Foster program overview
+[ ] Volunteer role descriptions
 
 #### About
 
