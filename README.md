@@ -45,7 +45,7 @@ contact.html
 
 [X] Volunteer or foster interest form
 [X] Service area
-[ ] Office hours
+[X] Office hours
 
 ### Media Requirements
 Use the provided rescue ZIP file. It includes:
@@ -53,24 +53,24 @@ Use the provided rescue ZIP file. It includes:
 [ ] rescue-pet.jpg
 [ ] rescue-volunteer.jpg
 [ ] rescue-pet-spotlight.jpg
-[ ] rescue-feature-small.jpg
-[ ] rescue-feature-large.jpg
-[ ] rescue-message.mp4
+[X] rescue-feature-small.jpg
+[X] rescue-feature-large.jpg
+[X] rescue-message.mp4
 
 #### Your site should include:
 [ ] Adoptable pet photo
 [ ] Volunteer or event photo
 [ ] One figure featuring a pet spotlight with a caption
-[ ] One responsive featured image using the <picture> element
-[ ] One short director or coordinator video message with fallback text
+[X] One responsive featured image using the <picture> element
+[X] One short director or coordinator video message with fallback text
 
 ### Form Focus
 The form should collect:
 
-[ ] Name
-[ ] Email
-[ ] Interest type, such as volunteer, foster, or adoption information
-[ ] Availability
-[ ] Experience with pets
-[ ] Short message 
+[X] Name
+[X] Email
+[X] Interest type, such as volunteer, foster, or adoption information
+[X] Availability
+[X] Experience with pets
+[X] Short message 
 
