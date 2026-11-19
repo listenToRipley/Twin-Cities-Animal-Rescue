@@ -22,29 +22,205 @@
         <main id="contact-us">
             <section id="form">
                 <h2>Volunteer or foster interest form</h2>
-                <form action="">
+                    <form id="signup">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label for="req-name" >Name</label>
+                            <input placeholder="Enter name" name="req-name" required>
+                            <br>
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="jane@example.com" name="email" required>
+                            <br>
+                            <label for="phone">Phone :</label>
+                            <input type="tel" id="phone" name="phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            title="Enter phone as 123-456-7890" required>
+                            <br>
+                            <label>Interested In</label>
+                            <select required>
+                                <option value="">Select interest</option>
+                                <option value="adopt">Adoption</option>
+                                <option value="foster">Fostering</option>
+                                <option value="volunteer">Volunteering</option>
+                            </select>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Preferences</legend>
+                            <label for="contactEmail">Email Address:</label>
+                            <input type="email" id="contactEmail" name="contactEmail">
+                            <br>
+                            <label for="contactPhone">Phone Number:</label>
+                            <input type="tel" id="contactPhone" name="contactPhone">
+                            <br>
+                            <p>Preferred Method:</p>
+                            <!-- radio buttons -->
+                            <label>
+                            <input type="radio" name="contactMethod" value="email"> Email
+                            </label>
+                            <label>
+                            <input type="radio" name="contactMethod" value="phone"> Phone
+                            </label>
+                            <label>
+                            <input type="radio" name="contactMethod" value="text"> Text
+                            </label>
+                            <br>
+                            <label for="preferredTime">Best time to reach you:</label>
+                            <em>Please keep in mind response time is generally within 48 hours.</em>
+                            <select id="preferredTime" name="preferredTime">
+                            <option value="any">Any Time (8AM-8PM)</option>
+                            <option value="morning">Morning (8AM-12PM)</option>
+                            <option value="afternoon">Afternoon (12-5PM)</option>
+                            <option value="evening">Evening(5-8PM)</option>
+                            </select>
+                        </fieldset>
+                        <br>
+                        <fieldset id="adoption-info">
+                            <legend>Adoption Details</legend>
+                            <p>Have you already picked out an animal?</p>
+                            <label>
+                            <input type="radio" name="picked" value="yes"> Yes
+                            </label>
+                            <label>
+                            <input type="radio" name="picked" value="No"> No
+                            </label> 
+                            <hr>
+                            <div>
+                                <p>If <strong>yes</strong>, please provide the pet's name and their ID.</p>
+                                <p>The ID is provided on their information sheet provided to you as last visit.</p>
+                                <label for="pet-name">Pet Name</label>
+                                <input type="text" name="pet-name">
+                                <label for="pet-id">Pet ID</label>
+                                <input type="number" name="pet-id" id="pet-id">
+                                <p>We do not allow adoption until the pet has been met in person and a home assessment has been completed.</p>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>If <strong>no</strong>, you have not picked out a pet yet --</p>
+                                <label for="petType">Please select which type of pet you are interested in:</label>
+                                <select id="preferredTime" name="petType">
+                                <option value="bird">Bird</option>
+                                <option value="cat">Cat</option>
+                                <option value="dog">Dog</option>
+                                <option value="guinea-pig">Guinea Pig</option>
+                                <option value="rabbit">Rabbit</option> 
+                                <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <p>Are you interested in adopting a bonded pets?</p>
+                            <label>
+                            <input type="radio" name="bonded" value="yes"> Yes
+                            </label>
+                            <label>
+                            <input type="radio" name="bonded" value="No"> No
+                            </label> 
+                            <br>
+                        </fieldset>
+                        <hr>
+                        <fieldset id="foster-info">
+                            <legend>Foster Details</legend>
+                            <div>
+                                <p>Will you be able to attend an in person 2 hour orientation?</p>
+                                <label>
+                                <input type="radio" name="orientation" value="yes"> Yes
+                                </label>
+                                <label>
+                                <input type="radio" name="orientation" value="No"> No
+                                </label> 
+                            </div>
+                            <div>
+                                <p>Are you interested in fostering kitten still on formula? (<em>These kitten require additional care and regular feedings</em>)</p>
+                                
+                                <label><input type="radio" name="bottle-baby" value="yes"> Yes</label>
+                                <label><input type="radio" name="bottle-baby" value="No"> No</label> 
+                            </div>
+                            <div>
+                                <p id="foster-type">Which types of animals would be available to foster?</p>
+                                <label><input type="checkbox" name="foster-type" value="bird">Bird</input></label>
+                                <label><input type="checkbox" name="foster-type" value="cat">Cat</input></label>
+                                <label><input type="checkbox" name="foster-type" value="dog">Dog</input></label>
+                                <label><input type="checkbox" name="foster-type" value="guinea-pig">Guinea Pig</input></label>
+                                <label><input type="checkbox" name="foster-type" value="rabbit">Rabbit</input> </label>
+                                <label><input type="checkbox" name="foster-type" value="other">Other</input></label>
+                            </div>
+                            <div>
+                                <p id="foster-type">Which day/s would be best for a home visit?</p>
+                                <!---Would like to add a select all button in the future-->
+                                <p><em>ALL</em> foster arrangements require a home inspections before any animals can be placed in your care.</p>
+                                <label><input type="checkbox" name="inspect-day" value="monday">Monday</input></label>
+                                <label><input type="checkbox" name="inspect-day" value="tuesday">Tuesday</input></label>
+                                <label><input type="checkbox" name="inspect-day" value="wednesday">Wednesday</input></label>
+                                <label><input type="checkbox" name="inspect-day" value="thursday">Thursday</input></label>
+                                <label><input type="checkbox" name="inspect-day" value="friday">Friday</input> </label>
+                                <label><input type="checkbox" name="inspect-day" value="saturday">Saturday</input></label>
+                                <label><input type="checkbox" name="inspect-day" value="sunday">Sunday</input></label>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <fieldset id="volunteer-info">
+                            <legend>Volunteer Details</legend>
+
+                            <div id="volunteer-work">
+                                <p id="volunteer-type">Which types of animals are you interested in working with?</p>
+                                <label><input type="checkbox" name="volunteer-type" value="bird">Bird</input></label>
+                                <label><input type="checkbox" name="volunteer-type" value="cat">Cat</input></label>
+                                <label><input type="checkbox" name="volunteer-type" value="dog">Dog</input></label>
+                                <label><input type="checkbox" name="volunteer-type" value="guinea-pig">Guinea Pig</input></label>
+                                <label><input type="checkbox" name="volunteer-type" value="rabbit">Rabbit</input> </label>
+                                <label><input type="checkbox" name="volunteer-type" value="other">Other</input></label>
+                                <br>
+                                <label for="experience">Do you have any experience working with the animals you have selected?</label>
+                                <textarea  name="experience" required minlength="20" maxlength="1000">
+                                </textarea> 
+                                <br>
+                                <p>Is there any particular positions you'd be interested in?</p>
+                                <p>If you need details on what some of these positions entail, <a href="services.html">review our services page.</a></p>
+                                <label><input type="checkbox" name="position" value="care">Animal Care Assistant</input></label>
+                                <label><input type="checkbox" name="position" value="social">Socialization</input></label>
+                                <label><input type="checkbox" name="position" value="adopt-sup">Adoption Support</input></label>
+                                <label><input type="checkbox" name="position" value="event">Events and Fundraising</input></label>
+                                <label><input type="checkbox" name="position" value="admin">Administrative Support</input></label>
+                                <label><input type="checkbox" name="position" value="outreach">Photography and Outreach</input></label>
+                                <br>
+                                <p>Are you able to lift over 50lbs?</p>
+                                <label><input type="radio" name="lifting" value="yes"> Yes</label>
+                                <label><input type="radio" name="lifting" value="No"> No</label> 
+                            </div>
+                            <div id="volunteer-available">
+                                <p id="volunteer-days">Which day/s would you be available for volunteering?</p>
+                                <label><input type="checkbox" name="volunteer-day" value="monday">Monday</input></label>
+                                <label><input type="checkbox" name="volunteer-day" value="tuesday">Tuesday</input></label>
+                                <label><input type="checkbox" name="volunteer-day" value="wednesday">Wednesday</input></label>
+                                <label><input type="checkbox" name="volunteer-day" value="thursday">Thursday</input></label>
+                                <label><input type="checkbox" name="volunteer-day" value="friday">Friday</input> </label>
+                                <label><input type="checkbox" name="volunteer-day" value="saturday">Saturday</input></label>
+                                <label><input type="checkbox" name="volunteer-day" value="sunday">Sunday</input></label>
+                                <br>
+                                <p id="volunteer-times">Which time slot would you be available to?</p>
+                                <label><input type="checkbox" name="volunteer-time" value="day">Day (8AM-8PM)</input></label>
+                                <label><input type="checkbox" name="volunteer-time" value="morning">Morning (8AM-12PM)</input></label>
+                                <label><input type="checkbox" name="volunteer-time" value="afternoon">Afternoon (12-5PM)</input></label>
+                                <label><input type="checkbox" name="volunteer-time" value="evening">Evening (5-8PM)</input></label>
+                                <label><input type="checkbox" name="volunteer-time" value="late-evening">Late Evening (8PM-12AM)</input></label>
+                                <label><input type="checkbox" name="volunteer-time" value="overnight">Overnight (12-8AM)</input></label>
+                                <label><input type="checkbox" name="volunteer-time" value="early-morning">Early Morning (12AM-8AM)</input></label>
+                            
+                            </div>
+                        </fieldset>
+                        <br>
+                        <div>
+                            <p>Additional Information</p>
+                            <label for="message">Anything else you'd like us to know?</label>
+                            <textarea  name="message"
+                                required minlength="20" maxlength="1000">
+                            </textarea>   
+                        </div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
                     <ol>
-                        <li>Name</li>
-                        <li>Email</li>
-                        <li>Interest type, such as volunteer, foster, or adoption information - check applicable?</li>
-                        <li>Availability - likely scale with says of the week?</li>
-                        <li>Experience with pets - check boxes with text field?</li>
-                        <li>Short message - text-field</li>
                     </ol>
                 </form>
-            </section>
-
-            <section id="service-area">
-                <h3>Service area</h3>
-                <p>probably a map</p>
-            </section>
-
-            <section id="operations">
-                <h3>Office hours and Location</h3>
-                <p>location with map</p>
-                <p>Hours of operations</p>
-            </section>
-            
+            </section>      
         </main>
     </header>
 </body>

@@ -35,9 +35,9 @@ index.html
 
  about.html
 
-[ ] Organization story
-[ ] Core values
-[ ] Partner acknowledgments
+[X] Organization story
+[X] Core values
+[X] Partner acknowledgments
 
 #### Contact
 
