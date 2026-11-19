@@ -21,8 +21,8 @@ Brand Tone: Hopeful, trustworthy, and action oriented.
 index.html
 
 ##### Mission statement
-[ ] Impact statistics, using text only
-[ ] “How You Can Help” section
+[X] Impact statistics, using text only
+[X] “How You Can Help” section
 
 #### Services
  services.html
@@ -50,17 +50,17 @@ contact.html
 ### Media Requirements
 Use the provided rescue ZIP file. It includes:
 
-[ ] rescue-pet.jpg
-[ ] rescue-volunteer.jpg
-[ ] rescue-pet-spotlight.jpg
+[X] rescue-pet.jpg
+[X] rescue-volunteer.jpg
+[X] rescue-pet-spotlight.jpg
 [X] rescue-feature-small.jpg
 [X] rescue-feature-large.jpg
 [X] rescue-message.mp4
 
 #### Your site should include:
-[ ] Adoptable pet photo
-[ ] Volunteer or event photo
-[ ] One figure featuring a pet spotlight with a caption
+[X] Adoptable pet photo
+[X] Volunteer or event photo
+[X] One figure featuring a pet spotlight with a caption
 [X] One responsive featured image using the <picture> element
 [X] One short director or coordinator video message with fallback text
 
