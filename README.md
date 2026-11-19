@@ -27,9 +27,9 @@ index.html
 #### Services
  services.html
 
-[ ] Adoption process overview
-[ ] Foster program overview
-[ ] Volunteer role descriptions
+[X] Adoption process overview
+[X] Foster program overview
+[X] Volunteer role descriptions
 
 #### About
 
@@ -43,8 +43,8 @@ index.html
 
 contact.html
 
-[ ] Volunteer or foster interest form
-[ ] Service area
+[X] Volunteer or foster interest form
+[X] Service area
 [ ] Office hours
 
 ### Media Requirements
